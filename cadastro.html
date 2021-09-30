@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CADASTRO</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="h1-logo">
+                <a href="index.html" title="SANT MOVEIS - AMBIENTES PLANEJADOS">
+                    <img class="logo" src="imagens/new-logo.png">
+                </a>
+            </h1>
+
+            <div>
+                <nav class="nav-bar">
+                    <ul class="nav-list">
+                        <li class="list-item"><a href="index.html">HOME</a></li>
+                        <li class="list-item"><a href="sobre-nos.html">SOBRE NOS</a></li>
+                        <li class="list-item"><a href="projetos.html">PROJETOS</a></li>
+                        <li class="list-item"><a href="cadastro.html">CADASTRO</a></li>
+                    </ul>
+                </nav>
+                <div class="text-div">
+                    DESIGN, GARANTIA E QUALIDADE PARA VOCE
+                    <button class="button">FAÇA SEU PEDIDO</button>
+                </div>
+            </div>
+
+        </header>
+        <div class="cadastro">
+            <div class="main-container">
+                <form action="http://www.thiagomiranda.net/formulario.php" method="GET">
+                    <label class="title">Cadastro</label>
+                    <input type="text" class="input" placeholder="Nome" name="nome">
+                    <input type="text" class="input" placeholder="Email" name="email">
+                    <input type="date" class="input" name="data-nascimento">
+                    
+                    <input type="text" class="input" placeholder="Bairro" name="bairro">
+                    
+                    <fieldset>
+                        <legend>Sexo:</legend>
+                        <label>
+                            <input type="radio" name="sexo" value="M">
+                            Masculino
+                        </label>
+                        <label>
+                            <input type="radio" name="sexo" value="F" checked>
+                            Feminino
+                        </label>
+                    </fieldset>
+
+                    <div class="mensagem">
+                        <label for="textarea">Mensagem: </label>
+                        <textarea id="textarea" name="mensagem"></textarea>
+                    </div>
+                    <label class="promocoes">
+                        Você aceita receber nossas novidades via E-mail?
+                        <input type="checkbox" name="promocoes" value="sim" checked> 
+                    </label>
+                    <input type="submit" value="Cadastrar" class="button-cadastro">
+                </form>
+            </div>
+        </div>
+        <footer class="footer">
+            CONTATO:
+            <div class="contato">
+                <div class="div-telefone"><img class="img-icone" src="imagens/telefone.png"> 9 99999999</div>
+                    <div class="div-insta"><img class="img-icone" src="imagens/insta.png">@santmoveis</div>
+                    <div class="div-loc">
+                        <img class="img-icone" src="imagens/location_105096.png"> ATENDEMOS EM TODA REGIÂO DA BAHIA
+                    </div>
+            </div>
+        </footer>
+    </body>
+</html>
